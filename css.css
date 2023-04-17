@@ -1,0 +1,284 @@
+:root {
+    --white: #FFF;
+    --amber: #FFC107;
+    --darkcharcoal: #333;
+    --purple: #BB86FC;
+    --blue: #232F34;
+    --middlegrey: #555;
+    --lime: #009879;
+    --lightgrey: #e5e5e5;
+    --selectgrey1: gray;
+    --selectgrey2: #737373;
+    --selectgrey3: #a6a6a6;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: montserrat, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+#baner {
+    background-color: var(--darkcharcoal);
+    height: 25%;
+    width: 100%;
+    border-bottom: 2px solid var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#lewyPanel, #prawyPanel {
+    float: left;
+    width: 33.33%;
+    height: 68%;
+    background-color: var(--darkcharcoal);
+}
+
+#srodkowyPanel {
+    float: left;
+    width: 33.33%;
+    height: 68%;
+    background-color: var(--middlegrey);
+    box-sizing: border-box;
+    border-right: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+}
+
+#stopka {
+    clear: both;
+    height: 8%;
+    background-color: #f90;
+    color: #FFF;
+    border-top: 2px solid var(--white);
+    padding: 10px;
+}
+
+#formRodzica, #formDziecka {
+    width: 50%;
+    position: relative;
+    left: 20%;
+    border-radius: 30px;
+    border: 2px solid var(--purple);
+    padding: 30px;
+    display: none;
+}
+
+#formRodzica {
+    margin-top: 30px;
+}
+
+#formDziecka {
+    margin-top: 15px;
+    left: 22.5%;
+    padding: 20px;
+}
+
+#dzieciTabela {
+    overflow-y: auto;
+    height: 65%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin: 30px 0;
+}
+
+#wychowawcaTabela {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin: 30px 0;
+}
+
+#wychowawcaInne {
+    overflow-y: auto;
+    height: 40%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin: 20px 0;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    font-weight: 300;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: var(--white);
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#srodkowyPanel h5 {
+    display: block;
+    margin: 0;
+}
+
+#prawyPanel h5 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.box {
+    position: relative;
+    top: 15%;
+    left: 30%;
+}
+
+.box select, #formDziecka select {
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    padding: 12px;
+}
+
+.box select {
+    color: var(--white);
+}
+
+#formDziecka select {
+    width: 49%;
+    height: 35px;
+    display: inline-block;
+    border: 2px solid var(--purple);
+    background-color: inherit;
+    color: var(--purple);
+    font-size: 18px;
+    padding: 4px;
+}
+
+
+#grupaSelect select {
+    background-color: var(--selectgrey1);
+}
+
+#wychowawcySelect select {
+    background-color: var(--selectgrey2);
+}
+
+.error {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: red;
+    display: none;
+}
+
+#prawyPanel a {
+    text-decoration: none;
+    color: var(--amber);
+    border: 2px solid var(--amber);
+    display: block;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s linear;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+#prawyPanel a:hover {
+    background-color: var(--amber);
+    color: var(--white);
+}
+
+#formRodzica input[type=text], #formDziecka input[type=text] {
+    border: 2px solid var(--purple);
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: var(--purple);
+    padding: 10px;
+}
+
+#formRodzica input[type=submit], #formDziecka input[type=submit] {
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid var(--purple);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .3s linear;
+    background-color: inherit;
+    color: var(--purple);
+    margin: 16px 0;
+    padding: 12px;
+}
+
+#formDziecka input[type=submit] {
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+#formRodzica input[type=submit]:hover, #formDziecka input[type=submit]:hover {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+#lewyPanel table, #wychowawcaTabela table, #wychowawcaInne table {
+    border-collapse: collapse;
+    font-size: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#lewyPanel thead th, #wychowawcaTabela th, #wychowawcaInne th {
+    background-color: var(--lime);
+    color: var(--white);
+    text-align: left;
+    font-weight: 700;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+#wychowawcaTabela tr {
+    background-color: var(--white);
+    border-right: 1px solid #ddd;
+}
+
+#lewyPanel tbody tr:last-of-type, #wychowawcaInne tbody tr:last-of-type {
+    border-bottom: 2px solid var(--lime);
+}
+
+#lewyPanel tbody tr:nth-of-type(even), #wychowawcaInne tbody tr:nth-of-type(even) {
+    background-color: var(--lightgrey);
+}
+
+#lewyPanel tbody tr:nth-of-type(odd), #wychowawcaInne tbody tr:nth-of-type(odd) {
+    background-color: var(--white);
+}
+
+#lewyPanel tbody tr:hover, #wychowawcaInne tbody tr:hover {
+    background-color: var(--selectgrey3);
+}
+
+#wychowawcaTabela tr:nth-of-type(odd), #lewyPanel tbody tr, #wychowawcaInne tbody tr {
+    border-bottom: 1px solid #ddd;
+}

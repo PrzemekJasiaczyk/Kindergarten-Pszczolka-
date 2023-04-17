@@ -1,0 +1,68 @@
+:root {
+    --white: #FFF;
+    --amber: #FFC107;
+    --darkcharcoal: #333;
+    --purple: #BB86FC;
+    --green: #13ac00;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: montserrat, sans-serif;
+    background-color: var(--darkcharcoal);
+    margin: 0;
+}
+
+#podsumowanie {
+    width: 50%;
+    position: relative;
+    top: 50px;
+    left: 25%;
+    border: 2px solid var(--purple);
+    border-radius: 30px;
+    text-align: center;
+    background-color: var(--darkcharcoal);
+    padding: 30px;
+}
+
+#podsumowanie .material-icons {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+    vertical-align: middle;
+    color: var(--green);
+}
+
+p {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: var(--amber);
+    border: 2px solid var(--amber);
+    display: block;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s linear;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: var(--amber);
+    color: var(--white);
+}
